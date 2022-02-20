@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --ff-header: 'Overpass', sans-serif;
+    --ff-body: 'Ubuntu', sans-serif;
+    --very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+    --very-dark-gray-blue: hsl(237, 17%, 21%);
+    --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    --CTA-text: hsl(356, 100%, 66%);
+    --CTA-hover-background: hsl(355, 100%, 74%);
+    --headings: hsl(208, 49%, 24%);
+    --text: hsl(0, 0%, 100%);
+    --footer-text: hsl(240, 2%, 79%);
+    --body-copy: hsl(207, 13%, 34%);
+    --footer-background: hsl(240, 10%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--ff-body);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h2, h3 {
+    color: var(--headings);
+    font-weight: 500;
+    line-height: 2;
+}
+
+/* Navbar Section */
+
+.navbar {
+    padding-top: 50px;
+}
+
+.navbar-nav {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    padding: 2px 25px;
+}
+
+/* Header Section */
+
+.header {
+    background-image: url('/images/bg-pattern-intro-desktop.svg');
+    background: linear-gradient(to right, var(--very-light-red), var(--light-red));
+    border-radius: 0 0 0 100px;
+}
+
+.context {
+    color: var(--text);
+    padding: 10% 0;
+    text-align: center;
+}
+
+.context h1 {
+    font-size: 3.5rem;
+    font-family: var(--ff-header);
+    font-weight: 600;
+}
+
+.context p {
+    font-size: 1.2rem;
+}
+
+.context-btn {
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 20px 10px 0;
+    width: 140px;
+}
+
+.context-btn.left {
+    background-color: var(--text);
+    color: var(--CTA-text);
+}
+
+.context-btn.right {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: var(--text);
+}
+
+/* Banner Section */
+
+.banner {
+    color: var(--body-copy);
+    padding: 10%;
+    position: relative;
+}
+
+.banner h2 {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-text {
+    margin-top: 8%;
+    width: 50%;
+}
+
+.flex-text p {
+    padding-bottom: 5%;
+    width: 88%;
+}
+
+.flex-img img {
+    position: absolute;
+    right: -18%;
+    top: 8%;
+}
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(to right, var(--very-dark-gray-blue), var(--very-dark-desaturated-blue));
+    border-radius: 0 100px 0 100px;
+    padding: 15vh;
+    margin: 10% 0;
+    height: 100%;
+    position: relative;
+}
+
+.hero-flex {
+    display: flex;
+}
+
+.hero-flex img {
+    position: absolute;
+    top: -60px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
