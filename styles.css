@@ -36,6 +36,10 @@ h3 {
   line-height: 2;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Navbar Section */
 
 .navbar {
@@ -132,7 +136,7 @@ h3 {
   width: 88%;
 }
 
-.flex-img img {
+.flex img {
   position: absolute;
   right: -18%;
   top: 8%;
@@ -169,6 +173,34 @@ h3 {
 
 .hero-text h2 {
   color: var(--text);
+}
+
+/* Banner Bottom Section */
+
+.banner-bottom {
+  position: relative;
+  margin-top: 20%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+}
+
+.grid-text {
+  grid-column: 2 / 3;
+  width: 70%;
+}
+
+.grid-text p {
+  padding-bottom: 5%;
+}
+
+.banner-bottom img {
+  position: absolute;
+  left: -19%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .attribution {
