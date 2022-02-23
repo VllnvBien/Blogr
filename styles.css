@@ -37,7 +37,7 @@ h3 {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 /* Navbar Section */
@@ -123,24 +123,17 @@ img {
 }
 
 .flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-top: 10%;
 }
 
-.flex-text {
-  margin-top: 8%;
-  width: 50%;
-}
-
-.flex-text p {
-  padding-bottom: 5%;
-  width: 88%;
-}
-
-.flex img {
+.img1 {
   position: absolute;
-  right: -18%;
-  top: 8%;
+  top: 100px;
 }
+
 
 /* Hero Section */
 
@@ -151,24 +144,24 @@ img {
     var(--very-dark-desaturated-blue)
   );
   border-radius: 0 100px 0 100px;
-  padding: 15vh;
+  padding: 7%;
   margin: 10% 0;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 100px;
 }
 
-.hero img {
+.img2 {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 10%;
-  transform: translateY(-40%);
+  transform: translateY(-45%);
 }
 
 .hero-text {
   color: var(--text);
-  grid-column: 2 / span 2;
-  width: 85%;
+  width: 90%;
 }
 
 .hero-text h2 {
